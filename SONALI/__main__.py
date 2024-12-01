@@ -37,15 +37,15 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("SONALI.plugins" + all_module)
-    LOGGER("SONALI.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+    LOGGER("SONALI.plugins").info("➽ᴀʟʟ ꜰᴇᴀᴛᴜʀᴇꜱ ʟᴏᴀᴅᴇᴅ ʙʏ ɴᴏʙɪᴛᴀ ʙᴏᴛ ᴍᴀᴋᴇʀ")
     await userbot.start()
     await RAUSHAN.start()
     await RAUSHAN.decorators()
-    LOGGER("SONALI").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗟𝗣𝗛𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("SONALI").info("➤\n ʀᴇᴘᴏ ᴍᴀᴅᴇ ʙʏ ɴᴏʙɪᴛᴀ ʙᴏᴛ ᴍᴀᴋᴇʀ")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("SONALI").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗟𝗣𝗛𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("SONALI").info("➤\n ʀᴇᴘᴏ ᴍᴀᴅᴇ ʙʏ ɴᴏʙɪᴛᴀ ʙᴏᴛ ᴍᴀᴋᴇʀ")
 
 
 if __name__ == "__main__":
