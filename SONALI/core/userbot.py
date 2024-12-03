@@ -94,7 +94,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("NOBITA_SUPPORT")
-                await self.one.join_chat("NOBITA_SUPPORT")
+                await self.one.join_chat("NOBITA_ALL_BOT")
             except:
                 pass
             assistants.append(3)
