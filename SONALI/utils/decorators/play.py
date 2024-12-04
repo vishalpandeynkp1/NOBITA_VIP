@@ -36,13 +36,6 @@ def PlayWrapper(command):
             )
             return await message.reply_text(_["general_3"], reply_markup=upl)
         
-        # Maintenance Check
-        if await is_maintenance() and message.from_user.id not in SUDOERS:
-            return await message.reply_text(
-                f"{app.mention} is under maintenance, visit <a href={SUPPORT_CHAT}>support chat</a> for more info.",
-                disable_web_page_preview=True,
-            )
-        
         try:
             await message.delete()
         except Exception:
