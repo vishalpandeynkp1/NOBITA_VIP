@@ -15,7 +15,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_NOBITA_BOT_DEVLOPER_ll")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","Aarvi_Music_xBot")
+BOT_USERNAME = getenv("BOT_USERNAME","momo_mbot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
@@ -87,21 +87,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/gl0w7d.jpeg"
+    "START_IMG_URL", "https://files.catbox.moe/9uused.webp"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/gl0w7d.jpeg"
+    "PING_IMG_URL", "https://files.catbox.moe/9uused.webp"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-STATS_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-STREAM_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/gl0w7d.jpeg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
+STATS_IMG_URL = "https://files.catbox.moe/9uused.webp"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/9uused.webp"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/9uused.webp"
+STREAM_IMG_URL = "https://files.catbox.moe/9uused.webp"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/9uused.webp"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/9uused.webp"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/9uused.webp"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
 
 
 def time_to_seconds(time):
