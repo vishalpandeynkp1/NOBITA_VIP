@@ -1,15 +1,15 @@
 from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
-from SONALI import app
-from SONALI.utils import help_pannel
-from SONALI.utils.database import get_lang
-from SONALI.utils.decorators.language import LanguageStart, languageCB
-from SONALI.utils.inline.help import help_back_markup, private_help_panel
+from NOBITA import app
+from NOBITA.utils import help_pannel
+from NOBITA.utils.database import get_lang
+from NOBITA.utils.decorators.language import LanguageStart, languageCB
+from NOBITA.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from SONALI.utils.stuffs.buttons import BUTTONS
-from SONALI.utils.stuffs.helper import Helper
+from NOBITA.utils.stuffs.buttons import BUTTONS
+from NOBITA.utils.stuffs.helper import Helper
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
