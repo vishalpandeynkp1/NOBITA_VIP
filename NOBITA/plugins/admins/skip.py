@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from SONALI import YouTube, app
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import db
-from SONALI.utils.database import get_loop
-from SONALI.utils.decorators import AdminRightsCheck
-from SONALI.utils.inline import close_markup, stream_markup, telegram_markup
-from SONALI.utils.stream.autoclear import auto_clean
-from SONALI.utils.thumbnails import get_thumb
+from NOBITA import YouTube, app
+from NOBITA.core.call import NOBI
+from NOBITA.misc import db
+from NOBITA.utils.database import get_loop
+from NOBITA.utils.decorators import AdminRightsCheck
+from NOBITA.utils.inline import close_markup, stream_markup, telegram_markup
+from NOBITA.utils.stream.autoclear import auto_clean
+from NOBITA.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -50,7 +50,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await RAUSHAN.stop_stream(chat_id)
+                                    await NOBI.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -77,7 +77,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await RAUSHAN.stop_stream(chat_id)
+                    return await NOBI.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -88,7 +88,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await RAUSHAN.stop_stream(chat_id)
+                return await NOBI.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -113,7 +113,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await RAUSHAN.skip_stream(chat_id, link, video=status, image=image)
+            await NOBI.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = telegram_markup(_, chat_id)
@@ -154,7 +154,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await RAUSHAN.skip_stream(chat_id, file_path, video=status, image=image)
+            await NOBI.skip_stream(chat_id, file_path, video=status, image=image)
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, videoid, chat_id)
@@ -174,7 +174,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await RAUSHAN.skip_stream(chat_id, videoid, video=status)
+            await NOBI.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = telegram_markup(_, chat_id)
@@ -196,7 +196,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await RAUSHAN.skip_stream(chat_id, queued, video=status, image=image)
+            await NOBI.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
