@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.misc import db
-from SONALI.utils.decorators import AdminRightsCheck
-from SONALI.utils.inline import close_markup
+from NOBITA import app
+from NOBITA.misc import db
+from NOBITA.utils.decorators import AdminRightsCheck
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS
 
 
