@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import YouTube, app
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import db
-from SONALI.utils import AdminRightsCheck, seconds_to_min
-from SONALI.utils.inline import close_markup
+from NOBITA import YouTube, app
+from NOBITA.core.call import NOBI
+from NOBITA.misc import db
+from NOBITA.utils import AdminRightsCheck, seconds_to_min
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await RAUSHAN.seek_stream(
+        await NOBI.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
