@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import SUDOERS, db
-from SONALI.utils import AdminRightsCheck
-from SONALI.utils.database import is_active_chat, is_nonadmin_chat
-from SONALI.utils.decorators.language import languageCB
-from SONALI.utils.inline import close_markup, speed_markup
+from NOBITA import app
+from NOBITA.core.call import NOBI
+from NOBITA.misc import SUDOERS, db
+from NOBITA.utils import AdminRightsCheck
+from NOBITA.utils.database import is_active_chat, is_nonadmin_chat
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
@@ -94,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await RAUSHAN.speedup_stream(
+        await NOBI.speedup_stream(
             chat_id,
             file_path,
             speed,
