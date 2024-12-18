@@ -1,8 +1,8 @@
 import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
-from SONALI import app
+from NOBITA import app
 from pyrogram import filters
-from SONALI.utils.RAUSHAN_ban import admin_filter
+from NOBITA.utils.RAUSHAN_ban import admin_filter
 
 
 
