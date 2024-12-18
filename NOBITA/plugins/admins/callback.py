@@ -3,10 +3,10 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from SONALI import YouTube, app
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import SUDOERS, db
-from SONALI.utils.database import (
+from NOBITA import YouTube, app
+from NOBITA.core.call import NOBI
+from NOBITA.misc import SUDOERS, db
+from NOBITA.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,17 +17,17 @@ from SONALI.utils.database import (
     music_on,
     set_loop,
 )
-from SONALI.utils.decorators.language import languageCB
-from SONALI.utils.formatters import seconds_to_min
-from SONALI.utils.inline import (
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.formatters import seconds_to_min
+from NOBITA.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
 )
-from SONALI.utils.stream.autoclear import auto_clean
-from SONALI.utils.thumbnails import get_thumb
+from NOBITA.utils.stream.autoclear import auto_clean
+from NOBITA.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -141,7 +141,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await RAUSHAN.pause_stream(chat_id)
+        await NOBI.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
         )
@@ -150,13 +150,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await RAUSHAN.resume_stream(chat_id)
+        await NOBI.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention),
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await RAUSHAN.stop_stream(chat_id)
+        await NOBI.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_5"].format(mention),
@@ -181,7 +181,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         
                     )
                     try:
-                        return await RAUSHAN.stop_stream(chat_id)
+                        return await NOBI.stop_stream(chat_id)
                     except:
                         return
             except:
@@ -194,7 +194,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                             mention, CallbackQuery.message.chat.title
                         ),
                     )
-                    return await RAUSHAN.stop_stream(chat_id)
+                    return await NOBI.stop_stream(chat_id)
                 except:
                     return
         else:
@@ -226,7 +226,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await RAUSHAN.skip_stream(chat_id, link, video=status, image=image)
+                await NOBI.skip_stream(chat_id, link, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = telegram_markup(_, chat_id)
@@ -270,7 +270,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await RAUSHAN.skip_stream(chat_id, file_path, video=status, image=image)
+                await NOBI.skip_stream(chat_id, file_path, video=status, image=image)
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, videoid, chat_id)
@@ -291,7 +291,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await RAUSHAN.skip_stream(chat_id, videoid, video=status)
+                await NOBI.skip_stream(chat_id, videoid, video=status)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = telegram_markup(_, chat_id)
@@ -314,7 +314,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await RAUSHAN.skip_stream(chat_id, queued, video=status, image=image)
+                await NOBI.skip_stream(chat_id, queued, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
