@@ -17,9 +17,9 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from SONALI import LOGGER, YouTube, app
-from SONALI.misc import db
-from SONALI.utils.database import (
+from NOBITA import LOGGER, YouTube, app
+from NOBITA.misc import db
+from NOBITA.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -31,11 +31,11 @@ from SONALI.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from SONALI.utils.exceptions import AssistantErr
-from SONALI.utils.formatters import check_duration, seconds_to_min, speed_converter
-from SONALI.utils.inline.play import stream_markup, telegram_markup
-from SONALI.utils.stream.autoclear import auto_clean
-from SONALI.utils.thumbnails import get_thumb
+from NOBITA.utils.exceptions import AssistantErr
+from NOBITA.utils.formatters import check_duration, seconds_to_min, speed_converter
+from NOBITA.utils.inline.play import stream_markup, telegram_markup
+from NOBITA.utils.stream.autoclear import auto_clean
+from NOBITA.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
@@ -51,7 +51,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="RAUSHANAss1",
+            name="NOBIss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -61,7 +61,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="RAUSHANAss2",
+            name="NOBIss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -71,7 +71,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="RAUSHANXAss3",
+            name="NOBIss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -81,7 +81,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="RAUSHANXAss4",
+            name="NOBIss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -91,7 +91,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="RAUSHANAss5",
+            name="NOBIss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -608,4 +608,4 @@ class Call(PyTgCalls):
             await self.change_stream(client, update.chat_id)
 
 
-RAUSHAN = Call()
+NOBI = Call()
