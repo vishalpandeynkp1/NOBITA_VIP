@@ -2,7 +2,7 @@ import asyncio
 from pyrogram.enums import ChatType, ChatMemberStatus
 from NOBITA import app
 from pyrogram import filters
-from NOBITA.utils.RAUSHAN_ban import admin_filter
+from NOBITA.utils.NOBI_ban import admin_filter
 
 
 
