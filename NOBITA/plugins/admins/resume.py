@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.core.call import RAUSHAN
-from SONALI.utils.database import is_music_playing, music_on
-from SONALI.utils.decorators import AdminRightsCheck
-from SONALI.utils.inline import close_markup
+from NOBITA import app
+from NOBITA.core.call import NOBI
+from NOBITA.utils.database import is_music_playing, music_on
+from NOBITA.utils.decorators import AdminRightsCheck
+from NOBITA.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -15,7 +15,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await RAUSHAN.resume_stream(chat_id)
+    await NOBI.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
