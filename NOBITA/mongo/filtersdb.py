@@ -1,4 +1,4 @@
-from PURVIMUSIC.utils.mongo import db
+from AARUMUSIC.utils.mongo import db
 
 filters = db.filters["filters"] 
 
