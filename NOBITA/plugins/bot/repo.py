@@ -1,8 +1,8 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from SONALI import app
+from NOBITA import app
 from config import BOT_USERNAME
-from SONALI.utils.errors import capture_err
+from NOBITA.utils.errors import capture_err
 import httpx 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -20,13 +20,13 @@ start_txt = """
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝗔ᴅᴅ ᴍᴇ 𝗠ᴀʙʏ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("𝗔ᴅᴅ 𝗠ᴇ 𝗝ᴀᴀɴ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
           InlineKeyboardButton("𝗛ᴇʟᴘ", url="https://t.me/NOBITA_ALL_BOT"),
           ],
                [
-                InlineKeyboardButton("𝗧ᴇᴀᴍ 𝗣ᴜʀᴠɪ 𝗕ᴏᴛs", url=f"https://t.me/NOBITA_SUPPORT"),
+                InlineKeyboardButton("𝗧ᴇᴀᴍ 𝗡ᴏʙɪᴛᴀ 𝗕ᴏᴛs", url=f"https://t.me/NOBITA_SUPPORT"),
 ],
 [
 InlineKeyboardButton("𝗠ᴀɪɴ 𝗕ᴏᴛ", url=f"https://t.me/AARU_XMUSIC_BOT"),
