@@ -6,23 +6,23 @@ from pyrogram.types import InlineKeyboardButton
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from SONALI import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from SONALI.core.call import RAUSHAN
-from SONALI.utils import seconds_to_min, time_to_seconds
-from SONALI.utils.channelplay import get_channeplayCB
-from SONALI.utils.decorators.language import languageCB
-from SONALI.utils.decorators.play import PlayWrapper
-from SONALI.utils.database import is_served_user
-from SONALI.utils.formatters import formats
-from SONALI.utils.inline import (
+from NOBITA import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from NOBITA.core.call import NOBI
+from NOBITA.utils import seconds_to_min, time_to_seconds
+from NOBITA.utils.channelplay import get_channeplayCB
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.decorators.play import PlayWrapper
+from NOBITA.utils.database import is_served_user
+from NOBITA.utils.formatters import formats
+from NOBITA.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from SONALI.utils.logger import play_logs
-from SONALI.utils.stream.stream import stream
+from NOBITA.utils.logger import play_logs
+from NOBITA.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -292,7 +292,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await RAUSHAN.stream_call(url)
+                await NOBI.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -505,8 +505,8 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("RAUSHANmousAdmin") & ~BANNED_USERS)
-async def RAUSHANmous_check(client, CallbackQuery):
+@app.on_callback_query(filters.regex("NOBImousAdmin") & ~BANNED_USERS)
+async def NOBImous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
@@ -516,7 +516,7 @@ async def RAUSHANmous_check(client, CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("RAUSHANPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("NOBIPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
