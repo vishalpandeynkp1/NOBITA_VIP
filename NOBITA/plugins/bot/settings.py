@@ -10,8 +10,8 @@ from pyrogram.types import (
     InputMediaVideo,
 )
 
-from SONALI import app
-from SONALI.utils.database import (
+from NOBITA import app
+from NOBITA.utils.database import (
     add_nonadmin_chat,
     get_authuser,
     get_authuser_names,
@@ -27,15 +27,15 @@ from SONALI.utils.database import (
     skip_off,
     skip_on,
 )
-from SONALI.utils.decorators.admins import ActualAdminCB
-from SONALI.utils.decorators.language import language, languageCB
-from SONALI.utils.inline.settings import (
+from NOBITA.utils.decorators.admins import ActualAdminCB
+from NOBITA.utils.decorators.language import language, languageCB
+from NOBITA.utils.inline.settings import (
     auth_users_markup,
     playmode_users_markup,
     setting_markup,
     vote_mode_markup,
 )
-from SONALI.utils.inline.start import private_panel
+from NOBITA.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, START_IMG_URL
 
 
