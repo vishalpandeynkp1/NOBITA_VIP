@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import requests
-from SONALI import app
+from NOBITA import app
 
 # Function to chunk the repository info into smaller parts
 def chunk_string(text, chunk_size):
