@@ -6,11 +6,11 @@ import traceback
 from inspect import getfullargspec
 from io import StringIO
 from time import time
-from SONALI.misc import SUDOERS
+from NOBITA.misc import SUDOERS
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from SONALI import app
+from NOBITA import app
 
 
 async def aexec(code, client, message):
