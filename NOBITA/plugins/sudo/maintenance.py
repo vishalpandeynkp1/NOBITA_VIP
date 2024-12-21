@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
