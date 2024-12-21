@@ -7,8 +7,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFont
 from pyrogram import enums, filters
 from pyrogram.types import ChatMemberUpdated
 
-from SONALI import app
-from SONALI.utils.database import get_assistant
+from NOBITA import app
+from NOBITA.utils.database import get_assistant
 
 LOGGER = getLogger(__name__)
 
@@ -126,7 +126,7 @@ async def greet_new_members(_, member: ChatMemberUpdated):
 
         # Add the modified condition here
         if member.new_chat_member and not member.old_chat_member:
-            welcome_text =  f"""**⛳️ 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ ⛳️**  \n**┏━━━━━━━━🧸━━━━━━━┓**\n         **[˹𝐒ᴏɴ፝֠֩‌ᴧʟɪ - 𝐌ᴜ𝛅ɪᴄ˼]**\n**┗━━━━━━━━🧸━━━━━━━┛**\n**➤ 𝐍ᴀᴍᴇ 🖤 ◂⚚▸**  {user.mention} 💤 ❤️\n**➤ 𝐔ꜱᴇʀ 𝐈ᴅ 🖤 ◂⚚▸** {user.id} ❤️🧿\n**➤ 𝐔ꜱᴇʀɴᴀᴍᴇ 🖤 ◂⚚▸**  @{user.username}  ❤️🌎\n**➤ 𝐌ᴇᴍʙᴇʀs 🖤 ◂⚚▸**  {count} ❤️🍂"""
+            welcome_text =  f"""**⛳️ 𝐖ᴇʟᴄᴏᴍᴇ 𝐓ᴏ 𝐎ᴜʀ 𝐆ʀᴏᴜᴘ ⛳️**  \n**┏━━━━━━━━🧸━━━━━━━┓**\n         **[˹ᴀᴀʀᴜ ꭙ ᴍᴜsɪᴄ˼]**\n**┗━━━━━━━━🧸━━━━━━━┛**\n**➤ 𝐍ᴀᴍᴇ 🖤 ◂⚚▸**  {user.mention} 💤 ❤️\n**➤ 𝐔ꜱᴇʀ 𝐈ᴅ 🖤 ◂⚚▸** {user.id} ❤️🧿\n**➤ 𝐔ꜱᴇʀɴᴀᴍᴇ 🖤 ◂⚚▸**  @{user.username}  ❤️🌎\n**➤ 𝐌ᴇᴍʙᴇʀs 🖤 ◂⚚▸**  {count} ❤️🍂"""
             await asyncio.sleep(3)
             await userbot.send_message(chat_id, text=welcome_text)
     except Exception as e:
