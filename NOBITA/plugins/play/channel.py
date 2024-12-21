@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.utils.database import set_cmode
-from SONALI.utils.decorators.admins import AdminActual
+from NOBITA import app
+from NOBITA.utils.database import set_cmode
+from NOBITA.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
