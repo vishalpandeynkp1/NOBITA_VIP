@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 from unidecode import unidecode
 
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import (
     get_active_chats,
     get_active_video_chats,
     remove_active_chat,
