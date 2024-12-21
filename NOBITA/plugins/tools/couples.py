@@ -8,14 +8,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.enums import *
 
 #BOT FILE NAME
-from SONALI import app as app
-from SONALI.mongo.couples_db import _get_image, get_couple
+from NOBITA import app as app
+from NOBITA.mongo.couples_db import _get_image, get_couple
 
 POLICE = [
     [
         InlineKeyboardButton(
-            text="|| ˹𖤍 𝗔𝗟𝗣𝗛𝗔 𖤍˼ ||",
-            url=f"https://t.me/PURVI_SUPPORT",
+            text="|| ˹𖤍 𝗡𝗢𝗕𝗜𝗧𝗔 𖤍˼ ||",
+            url=f"https://t.me/NOBITA_SUPPORT",
         ),
     ],
 ]
@@ -72,7 +72,7 @@ async def ctest(_, message):
          try:
             p1 = await app.download_media(photo1.big_file_id, file_name="pfp.png")
          except Exception:
-            p1 = "SONALI/assets/upic.png"
+            p1 = "NOBITA/assets/upic.png"
          try:
             p2 = await app.download_media(photo2.big_file_id, file_name="pfp1.png")
          except Exception:
@@ -81,7 +81,7 @@ async def ctest(_, message):
          img1 = Image.open(f"{p1}")
          img2 = Image.open(f"{p2}")
 
-         img = Image.open("SONALI/assets/cppic.png")
+         img = Image.open("NOBITA/assets/cppic.png")
 
          img1 = img1.resize((437,437))
          img2 = img2.resize((437,437))
