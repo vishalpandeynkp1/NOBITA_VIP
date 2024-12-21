@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from SONALI import YouTube, app
-from SONALI.utils.channelplay import get_channeplayCB
-from SONALI.utils.decorators.language import languageCB
-from SONALI.utils.stream.stream import stream
+from NOBITA import YouTube, app
+from NOBITA.utils.channelplay import get_channeplayCB
+from NOBITA.utils.decorators.language import languageCB
+from NOBITA.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
