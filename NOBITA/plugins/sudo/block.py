@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.database import add_gban_user, remove_gban_user
-from SONALI.utils.decorators.language import language
-from SONALI.utils.extraction import extract_user
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import add_gban_user, remove_gban_user
+from NOBITA.utils.decorators.language import language
+from NOBITA.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
