@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from SONALI import app
-from SONALI.core.call import RAUSHAN, autoend
-from SONALI.utils.database import get_client, is_active_chat, is_autoend
+from NOBITA import app
+from NOBITA.core.call import NOBI, autoend
+from NOBITA.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from SONALI.core.userbot import assistants
+            from NOBITA.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -26,8 +26,8 @@ async def auto_leave():
                         ]:
                             if (
                                 i.chat.id != config.LOGGER_ID
-                                and i.chat.id != -1001465277194
-                                and i.chat.id != -1002120144597
+                                and i.chat.id != -1001511253627
+                                and i.chat.id != -1001511253627
                             ):
                                 if left == 20:
                                     continue
@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await RAUSHAN.stop_stream(chat_id)
+                    await NOBI.stop_stream(chat_id)
                 except:
                     continue
                 try:
