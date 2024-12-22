@@ -8,9 +8,9 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.database import (
     get_assistant,
     get_lang,
     is_active_chat,
