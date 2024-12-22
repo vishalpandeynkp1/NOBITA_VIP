@@ -2,7 +2,7 @@ import re
 import requests
 from pyrogram import filters
 
-from SONALI import app
+from NOBITA import app
 from config import LOGGER_ID
 
 
