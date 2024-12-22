@@ -5,8 +5,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.raw.functions.messages import DeleteHistory
 
-from SONALI import userbot as us, app
-from SONALI.core.userbot import assistants
+from NOBITA import userbot as us, app
+from NOBITA.core.userbot import assistants
 
 @app.on_message(filters.command("sg"))
 async def sg(client: Client, message: Message):
