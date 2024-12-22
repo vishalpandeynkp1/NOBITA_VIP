@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from SONALI import app
-from SONALI.utils.database import is_on_off
+from NOBITA import app
+from NOBITA.utils.database import is_on_off
 from config import LOGGER_ID
 
 
