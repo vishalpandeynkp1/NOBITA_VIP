@@ -1,11 +1,11 @@
 from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup
-from SONALI import app
-from SONALI.core.call import RAUSHAN
-from SONALI.utils import bot_sys_stats
-from SONALI.utils.inline.extras import botplaylist_markup
-from SONALI.utils.decorators.language import language
+from NOBITA import app
+from NOBITA.core.call import NOBI
+from NOBITA.utils import bot_sys_stats
+from NOBITA.utils.inline.extras import botplaylist_markup
+from NOBITA.utils.decorators.language import language
 from config import BANNED_USERS, PING_IMG_URL
 import aiohttp
 import asyncio
@@ -19,7 +19,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"].format(app.mention),
     )
     start = datetime.now()
-    pytgping = await RAUSHAN.ping()
+    pytgping = await NOBI.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit(
