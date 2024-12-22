@@ -3,14 +3,14 @@
 ➥ 𝖳ʜᴇɴ ʜᴏsᴛ ᴏɴ ʜᴇʀᴋᴏᴜ / ᴠᴘs / ᴋᴏʏᴀʙ / ᴇᴛᴄ..👨🏻‍💻
 <h1 align="center"
  
-### 🚩🚩 जय बजरंग बली 🚩🚩
+### 🌸🌺✨💖 || ʀᴀᴅʜᴇ ʀᴀᴅʜᴇ || 💖✨🌺🌸
 <h1 align="center"
   
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <img src="https://readme-typing-svg.herokuapp.com?color=FF0085&width=620&lines=𝐏𝐎𝐖𝐄𝐑𝐄𝐃+𝐁𝐘+𝐍𝐎𝐁𝐈𝐓𝐀+𝐁𝐎𝐓+𝐌𝐀𝐊𝐄𝐑"></b></h3>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <h1 align="center"><b>𝗡𝗢𝗕𝗜𝗧𝗔 𝗔𝗟𝗟 𝗕𝗢𝗧</b></h1>
-<p align="center"><a href="https://ll_NOBITA_BOT_DEVLOPER_ll"><img src="https://files.catbox.moe/gl0w7d.jpeg" width="400"></a></p>
+<p align="center"><a href="https://ll_NOBITA_BOT_DEVLOPER_ll"><img src="https://files.catbox.moe/boez8a.jpg" width="400"></a></p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 </p>
