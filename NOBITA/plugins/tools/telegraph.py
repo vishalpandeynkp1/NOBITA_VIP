@@ -1,7 +1,7 @@
 import os
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from SONALI import app
+from NOBITA import app
 import requests
 
 
@@ -58,7 +58,7 @@ async def get_link_group(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "𝖢ʀᴇᴀᴛᴇ ʙʏ 𝖳ᴇᴀᴍ 𝖯ᴜʀᴠɪ 𝖳ᴀᴘ ᴛᴏ 𝖲ᴇᴇ",
+                                    "𝖢ʀᴇᴀᴛᴇ ʙʏ 𝖳 𝖭ᴏʙɪᴛᴀ 𝖳ᴀᴘ ᴛᴏ 𝖲ᴇᴇ",
                                     url=upload_path,
                                 )
                             ]
