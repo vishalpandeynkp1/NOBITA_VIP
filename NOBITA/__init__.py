@@ -1,8 +1,8 @@
-from SONALI.core.bot import RAUSHAN
-from SONALI.core.dir import dirr
-from SONALI.core.git import git
-from SONALI.core.userbot import Userbot
-from SONALI.misc import dbb, heroku
+from NOBITA.core.bot import NOBI
+from NOBITA.core.dir import dirr
+from NOBITA.core.git import git
+from NOBITA.core.userbot import Userbot
+from NOBITA.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = RAUSHAN()
+app = NOBI()
 api = SafoneAPI()
 userbot = Userbot()
 
