@@ -15,7 +15,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_NOBITA_BOT_DEVLOPER_ll")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","momo_mbot")
+BOT_USERNAME = getenv("BOT_USERNAME","aaru_music_xbot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
@@ -41,7 +41,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/NOBITA-PRIVETE-ACCOUNT/momomusic",
+    "https://github.com/vishalpandeynkp1/NOBITA_VIP",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
