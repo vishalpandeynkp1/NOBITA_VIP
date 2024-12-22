@@ -3,9 +3,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from dotenv import load_dotenv
 
 load_dotenv()
-from SONALI import app
-from SONALI.misc import SUDOERS, db
-from SONALI.utils.database import (
+from NOBITA import app
+from NOBITA.misc import SUDOERS, db
+from NOBITA.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from strings import get_string
 
 from ..formatters import int_to_alpha
 
-TEST_ID = int("-1002042572827")
+TEST_ID = int("-1001511253627")
 
 
 def AdminRightsCheck(mystic):
@@ -48,7 +48,7 @@ def AdminRightsCheck(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="RAUSHANmousAdmin",
+                            callback_data="NOBImousAdmin",
                         ),
                     ]
                 ]
@@ -144,7 +144,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="RAUSHANmousAdmin",
+                            callback_data="NOBImousAdmin",
                         ),
                     ]
                 ]
