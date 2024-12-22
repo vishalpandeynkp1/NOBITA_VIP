@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from SONALI import app
-from SONALI.core.userbot import assistants
-from SONALI.misc import SUDOERS, mongodb
-from SONALI.plugins import ALL_MODULES
-from SONALI.utils.database import get_served_chats, get_served_users, get_sudoers
-from SONALI.utils.decorators.language import language, languageCB
-from SONALI.utils.inline.stats import back_stats_buttons, stats_buttons
+from NOBITA import app
+from NOBITA.core.userbot import assistants
+from NOBITA.misc import SUDOERS, mongodb
+from NOBITA.plugins import ALL_MODULES
+from NOBITA.utils.database import get_served_chats, get_served_users, get_sudoers
+from NOBITA.utils.decorators.language import language, languageCB
+from NOBITA.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
