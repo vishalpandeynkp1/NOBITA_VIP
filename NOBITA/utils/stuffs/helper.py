@@ -1,3 +1,4 @@
+#NOBITA PAPA
 # helper for strings
 
 class Helper(object):
@@ -30,7 +31,7 @@ sᴛɪᴄᴋᴇʀs ᴄᴏᴍᴍᴀɴᴅꜱ:
 
 /kang ➠ ᴜsᴇ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴀɴʏ sᴛɪᴄᴋᴇʀ ʀᴇᴘʟʏ ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ʏᴏᴜʀ ᴏᴡɴ ᴘᴀᴄᴋ.
 
-/mmf ➠ ʀᴇʟᴘʏ ᴀɴʏ sᴛɪᴄᴋᴇʀ ɢᴇᴛ ᴀ ɴᴇᴡ ɴᴀᴍᴇ ʟɪᴋᴇ /mmf RAJABABU 
+/mmf ➠ ʀᴇʟᴘʏ ᴀɴʏ sᴛɪᴄᴋᴇʀ ɢᴇᴛ ᴀ ɴᴇᴡ ɴᴀᴍᴇ ʟɪᴋᴇ /mmf NOBITAPAPA 
 '''
 
     HELP_TagAll = '''Tᴀɢ
@@ -59,7 +60,7 @@ sᴛɪᴄᴋᴇʀs ᴄᴏᴍᴍᴀɴᴅꜱ:
 
 𝖦ɪᴛʜᴜʙ ᴄᴏᴍᴍᴀɴᴅꜱ:
 
-/allrepo : sᴇᴇ ᴀʟʟ ʀᴇᴘᴏ ᴀɴʏ ɢɪᴛʜᴜʙ ᴀᴄᴄᴏᴜɴᴛ ᴇx - /allrepo TEAMPURVI.
+/allrepo : sᴇᴇ ᴀʟʟ ʀᴇᴘᴏ ᴀɴʏ ɢɪᴛʜᴜʙ ᴀᴄᴄᴏᴜɴᴛ ᴇx - /allrepo VISHALPANDEYNKP1.
 
 /github <ᴜsᴇʀɴᴀᴍᴇ> : ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴀ ɢɪᴛʜᴜʙ ᴜsᴇʀ.
 '''
