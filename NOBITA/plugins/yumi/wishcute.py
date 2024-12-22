@@ -2,9 +2,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
 import requests
-from SONALI import app 
+from NOBITA import app 
 
-SUPPORT_CHAT = "PURVI_SUPPORT"
+SUPPORT_CHAT = "NOBITA_SUPPORT"
 
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
@@ -30,7 +30,7 @@ async def wish(_, m):
             
     
 BUTTON = [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")]]
-CUTIE = "https://64.media.tumblr.com/d701f53eb5681e87a957a547980371d2/tumblr_nbjmdrQyje1qa94xto1_500.gif"
+CUTIE = "https://files.catbox.moe/m2gtl3.webp"
 
 @app.on_message(filters.command("cute"))
 async def cute(_, message):
