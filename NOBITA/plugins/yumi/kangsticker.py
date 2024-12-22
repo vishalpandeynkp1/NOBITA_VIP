@@ -14,17 +14,17 @@ from pyrogram.errors import (
     UserIsBlocked,
 )
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-from SONALI import app
+from NOBITA import app
 from config import BOT_USERNAME
-from SONALI.utils.errors import capture_err
+from NOBITA.utils.errors import capture_err
 
-from SONALI.utils.files import (
+from NOBITA.utils.files import (
     get_document_from_file_id,
     resize_file_to_sticker_size,
     upload_document,
 )
 
-from SONALI.utils.stickerset import (
+from NOBITA.utils.stickerset import (
     add_sticker_to_set,
     create_sticker,
     create_sticker_set,
