@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from SONALI.misc import db
-from SONALI.utils.formatters import check_duration, seconds_to_min
+from NOBITA.misc import db
+from NOBITA.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
