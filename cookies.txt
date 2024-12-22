@@ -1,1 +1,16 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+.youtube.com	TRUE	/	TRUE	1766728562	__Secure-3PAPISID	SPgCmeuNCnj7VEN4/AhOeURQ5RAocsA8T4
+.youtube.com	TRUE	/	TRUE	1768960417	PREF	f4=4000000&tz=Asia.Calcutta
+.youtube.com	TRUE	/	TRUE	1763702349	__Secure-1PSIDTS	sidts-CjEBQT4rX_yBSwgfcNj7fcmjZqn0nQS2eFi-Gq8yGDW9t-zBG-933odcOfYogjaWCvEwEAA
+.youtube.com	TRUE	/	TRUE	1763702349	__Secure-3PSIDTS	sidts-CjEBQT4rX_yBSwgfcNj7fcmjZqn0nQS2eFi-Gq8yGDW9t-zBG-933odcOfYogjaWCvEwEAA
+.youtube.com	TRUE	/	TRUE	1763702815	__Secure-3PSIDCC	AKEyXzUUDHGXn5mO5iGxmdRSKfB51M2FamXuW7kyw_vGMytKqJCdFFQHFPD5y_IZ7Auo9RYn
+.youtube.com	TRUE	/	TRUE	1766728562	__Secure-3PSID	g.a000qQget9ZKO-LMBCB_Fy1YtmpJihYIlhCM_ApnedlgV7O6-SMwMVZ5yNj29HhKvxLQvyFUQAACgYKAbASARESFQHGX2Mi9OT0XwTDLmdBraJDR4nmaBoVAUF8yKpn155yVtxn70XASJs05Fxd0076
+.youtube.com	TRUE	/	TRUE	1734402216	GPS	1
+.youtube.com	TRUE	/	TRUE	1749952422	VISITOR_INFO1_LIVE	HBhfax6Ezxs
+.youtube.com	TRUE	/	TRUE	1749952422	VISITOR_PRIVACY_METADATA	CgJJThIEGgAgYw%3D%3D
+.youtube.com	TRUE	/	TRUE	0	YSC	XwAB62rrqBs
+.youtube.com	TRUE	/	TRUE	1749952416	__Secure-ROLLOUT_TOKEN	CP3Go53ojprCxgEQ1Jyhh9mtigMY1Jyhh9mtigM%3D
 
