@@ -1,8 +1,8 @@
 from pyrogram import  filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from SONALI.utils.purvi_font import Fonts
-from SONALI import app
+from NOBITA.utils.VASU_font import Fonts
+from NOBITA import app
 
 @app.on_message(filters.command(["font", "fonts"]))
 async def style_buttons(c, m, cb=False):
