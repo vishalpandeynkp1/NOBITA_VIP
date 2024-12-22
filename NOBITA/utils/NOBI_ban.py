@@ -1,5 +1,5 @@
 from pyrogram import filters
-from SONALI.utils.admin_check import admin_check
+from NOBITA.utils.admin_check import admin_check
 
 
 USE_AS_BOT = True
