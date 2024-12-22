@@ -4,9 +4,9 @@ import speedtest
 from pyrogram import filters
 from pyrogram.types import Message
 
-from SONALI import app
-from SONALI.misc import SUDOERS
-from SONALI.utils.decorators.language import language
+from NOBITA import app
+from NOBITA.misc import SUDOERS
+from NOBITA.utils.decorators.language import language
 
 
 def testspeed(m, _):
