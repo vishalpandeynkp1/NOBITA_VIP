@@ -4,11 +4,11 @@ import importlib
 from pyrogram import idle
 
 import config
-from SONALI import LOGGER, app, userbot
-from SONALI.core.call import RAUSHAN
-from SONALI.misc import sudo
-from SONALI.plugins import ALL_MODULES
-from SONALI.utils.database import get_banned_users, get_gbanned
+from NOBITA import LOGGER, app, userbot
+from NOBITA.core.call import NOBI
+from NOBITA.misc import sudo
+from NOBITA.plugins import ALL_MODULES
+from NOBITA.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -21,7 +21,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER(__name__).error(
-            "𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐅𝐢𝐥𝐥𝐞𝐝, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐅𝐢𝐥𝐥 𝐀 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 V2 𝐒𝐞𝐬𝐬𝐢𝐨𝐧🤬"
+            "ꜱᴛʀɪɴɪɴɢ ✨ ꜱᴇꜱꜱɪᴏɴ 🔒 ɴᴏᴛ ꜰɪʟʟᴇᴅ, ᴘʟᴇᴀꜱᴇ 📝 ꜰɪʟʟ ᴀ ᴘʏʀᴏɢʀᴀᴍ 🖥️ v2 🛠️ ꜱᴇꜱꜱɪᴏɴ."
         )
 
     await sudo()
@@ -36,16 +36,16 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("SONALI.plugins" + all_module)
-    LOGGER("SONALI.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+        importlib.import_module("NOBITA.plugins" + all_module)
+    LOGGER("NOBITA.plugins").info("ᴀʟʟ ꜰᴇᴀᴛᴜʀᴇꜱ ʟᴏᴀᴅᴇᴅ ʙᴀʙʏ 🥳🎉🚀")
     await userbot.start()
-    await RAUSHAN.start()
-    await RAUSHAN.decorators()
-    LOGGER("SONALI").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗟𝗣𝗛𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    await NOBI.start()
+    await NOBI.decorators()
+    LOGGER("NOBITA").info("꘎♡━━━━━♡꘎\n  ♨️𝐄𝐒𝐀𝐊𝐎 𝐍𝐎𝐁𝐈𝐓𝐀 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐁𝐀𝐍𝐀𝐘𝐀 𝐇♨️\n꘎♡━━━━━♡꘎")
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("SONALI").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗟𝗣𝗛𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("NOBITA").info("꘎♡━━━━━♡꘎\n  ♨️𝐄𝐒𝐀𝐊𝐎 𝐍𝐎𝐁𝐈𝐓𝐀 𝐏𝐀𝐏𝐀 𝐍𝐄 𝐁𝐀𝐍𝐀𝐘𝐀 𝐇♨️\n꘎♡━━━━━♡꘎")
 
 
 if __name__ == "__main__":
