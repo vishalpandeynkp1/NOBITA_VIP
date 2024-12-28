@@ -9,7 +9,7 @@ from NOBITA.utils.database import get_served_chats
 # Convert AUTO_GCAST to boolean based on "On" or "Off"
 AUTO_GCASTS = AUTO_GCAST.strip().lower() == "on"
 
-START_IMG_URLS = "https://envs.sh/I0U.jpg"
+START_IMG_URLS = "https://envs.sh/BjZ.jpg"
 
 MESSAGE = f"""**๏ ᴛʜɪs ɪs ᴀᴅᴠᴀɴᴄᴇᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs + ᴄʜᴀɴɴᴇʟs ᴠᴄ. 💌
 
@@ -26,7 +26,7 @@ BUTTON = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏",
-                url=f"https://t.me/THE_NANCY_ROBOT?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
+                url=f"https://t.me/AARU_MUSIC_XBOT?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users",
             )
         ]
     ]
@@ -84,7 +84,3 @@ async def continuous_broadcast():
 # Start the continuous broadcast loop if AUTO_GCASTS is True
 if AUTO_GCASTS:
     asyncio.create_task(continuous_broadcast())
-
-
-
-
