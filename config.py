@@ -26,13 +26,13 @@ AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", None)
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "17000"))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1001511253627))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001511253627"))
 
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 7708051264))
+OWNER_ID = int(getenv("OWNER_ID", "7708051264"))
 
 
 ## Fill these variables if you're deploying on heroku.
