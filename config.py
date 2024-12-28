@@ -13,14 +13,16 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","ll_NOBITA_BOT_DEVLOPER_ll")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "ll_NOBITA_BOT_DEVLOPER_ll")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME","aaru_music_xbot")
+BOT_USERNAME = getenv("BOT_USERNAME", "aaru_music_xbot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
 
+AUTO_GCAST = getenv("AUTO_GCAST", "On")
 
+AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", None)
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
