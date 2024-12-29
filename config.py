@@ -13,34 +13,24 @@ API_HASH = getenv("API_HASH")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME", "ll_NOBITA_BOT_DEVLOPER_ll")
+OWNER_USERNAME = getenv("OWNER_USERNAME","ll_NOBITA_BOT_DEVLOPER_ll")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME", "aaru_music_xbot")
+BOT_USERNAME = getenv("BOT_USERNAME","AARU_MUSIC_XBOT")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
 
-AUTO_GCAST = getenv("AUTO_GCAST", "On")
 
-AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", None)
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "17000"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
-# Chat id or username of a group for logging bot's activities
-LOGGER_ID = getenv("LOGGER_ID", "-1001511253627")
-
-# Logic to handle both numeric IDs and usernames
-if LOGGER_ID.isdigit() or (LOGGER_ID.startswith("-") and LOGGER_ID[1:].isdigit()):
-    LOGGER_ID = int(LOGGER_ID)  # Convert to integer if it's a numeric ID
-else:
-    LOGGER_ID = LOGGER_ID  # Keep as string if it's a username
-
-LOG_GROUP_ID = LOGGER_ID
+# Chat id of a group for logging bot's activities
+LOGGER_ID = int(getenv("LOGGER_ID", -1001511253627))
 
 # Get this value from @NOBITA_ALL_BOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "6972508083"))
+OWNER_ID = int(getenv("OWNER_ID", 6972508083))
 
 
 ## Fill these variables if you're deploying on heroku.
@@ -51,7 +41,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/vishalpandeynkp1/NOBITA_VIP",
+    "https://github.com/vishalpandeynkp/NOBITA_VIP",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -97,21 +87,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/9uused.webp"
+    "START_IMG_URL", "https://files.catbox.moe/r55zca.jpeg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/9uused.webp"
+    "PING_IMG_URL", "https://files.catbox.moe/r55zca.jpeg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
-STATS_IMG_URL = "https://files.catbox.moe/9uused.webp"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/9uused.webp"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/9uused.webp"
-STREAM_IMG_URL = "https://files.catbox.moe/9uused.webp"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/9uused.webp"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/9uused.webp"
-SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
-SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/9uused.webp"
-SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/9uused.webp"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+STATS_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/r55zca.jpeg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/r55zca.jpeg"
+STREAM_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://files.catbox.moe/r55zca.jpeg"
 
 
 def time_to_seconds(time):
@@ -132,4 +122,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-)
+        )
