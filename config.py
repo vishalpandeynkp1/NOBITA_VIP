@@ -28,10 +28,16 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "17000"))
 
-# Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1001511253627"))
+# Chat id or username of a group for logging bot's activities
+LOGGER_ID = getenv("LOGGER_ID", "-1001511253627")
 
-LOG_GROUP_ID = int(getenv("LOGGER_ID", "-1001511253627"))
+# Logic to handle both numeric IDs and usernames
+if LOGGER_ID.isdigit() or (LOGGER_ID.startswith("-") and LOGGER_ID[1:].isdigit()):
+    LOGGER_ID = int(LOGGER_ID)  # Convert to integer if it's a numeric ID
+else:
+    LOGGER_ID = LOGGER_ID  # Keep as string if it's a username
+
+LOG_GROUP_ID = LOGGER_ID
 
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", "7708051264"))
