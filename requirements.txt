@@ -1,6 +1,5 @@
 aiofiles
 aiohttp
-#asyncio==3.4.3
 asyncio
 beautifulsoup4
 dnspython
@@ -9,7 +8,6 @@ future==0.18.3
 search_engine_parser
 telethon==1.33.1
 gitpython
-#httpx[http2]
 httpx==0.27.2
 heroku3
 hachoir
@@ -27,7 +25,6 @@ SafoneAPI==1.0.65
 tgcrypto
 gpytranslate
 MukeshAPI
-search_engine_parser
 googlesearch-python
 youtube-search-python
 spotipy
@@ -36,10 +33,12 @@ speedtest-cli
 unidecode
 urllib3
 wget
-git+https://github.com/KurimuzonAkuma/pyrogram@dev
 yt-dlp
 bing_image_downloader
+bing-image-urls
+
+# GitHub repositories
+git+https://github.com/KurimuzonAkuma/pyrogram@dev
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
-bing-image-urls
 git+https://github.com/vishalpandeynkp1/NobitaAPI
