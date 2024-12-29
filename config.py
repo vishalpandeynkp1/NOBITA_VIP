@@ -39,8 +39,8 @@ else:
 
 LOG_GROUP_ID = LOGGER_ID
 
-# Get this value from @PURVI_HELP_BOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "7708051264"))
+# Get this value from @NOBITA_ALL_BOT on Telegram by /id
+OWNER_ID = int(getenv("OWNER_ID", "6972508083"))
 
 
 ## Fill these variables if you're deploying on heroku.
