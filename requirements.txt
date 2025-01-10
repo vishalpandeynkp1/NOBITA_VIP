@@ -23,7 +23,7 @@ requests
 qrcode
 SafoneAPI==1.0.65
 tgcrypto
-gpytranslate==2.0.0  # Ensures compatibility
+gpytranslate==2.0.0  # Fixed for compatibility
 MukeshAPI
 googlesearch-python
 youtube-search-python
