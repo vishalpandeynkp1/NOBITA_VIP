@@ -1,3 +1,5 @@
+# MADE BY NOBITA BOT MAKER
+
 aiofiles
 aiohttp
 #asyncio==3.4.3
@@ -9,8 +11,7 @@ future==0.18.3
 search_engine_parser
 telethon==1.33.1
 gitpython
-#httpx[http2]
-httpx==0.27.2
+httpx[http2]
 heroku3
 hachoir
 motor==3.3.2
@@ -41,5 +42,6 @@ yt-dlp
 bing_image_downloader
 git+https://github.com/alexmercerind/youtube-search-python@main
 git+https://github.com/joetats/youtube_search@master
+#git+https://github.com/Vivekkumar-IN/TheApi@main
 bing-image-urls
-git+https://https://github.com/Noob-mukesh/MukeshAPI
+git+https://github.com/TEAMPURVI/PurviAPI
